@@ -12,8 +12,7 @@ let button_clicked=event.target;
     let button_value=button_clicked.innerText;
 
     if(button_value=="C"){
-        ans=0;
-        screen_output.innerText=ans;
+        screen_output.innerText=screen_output.innerText.slice(0,-1);
     }
     else if(button_value==="+/-"){
         if(ans==0){
